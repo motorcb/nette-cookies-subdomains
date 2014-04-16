@@ -1,0 +1,9 @@
+{block content}
+
+{if $user->isLoggedIn()}
+    <h1>Přihlášen</h1>
+    <a href="{link Logout!}">odhlásit</a>
+{else}
+    <h1>NEPřihlášen</h1>
+    {control loginForm}
+{/if}
